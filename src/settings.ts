@@ -1,4 +1,4 @@
-export const PLATFORM_NAME = 'Atomberg Smart Fans';
+export const PLATFORM_NAME = 'Atomberg Fan';
 
 export const PLUGIN_NAME = 'homebridge-atomberg-smart-fans';
 
