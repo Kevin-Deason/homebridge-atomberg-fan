@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "Atomberg Smart Fans",
+  "pluginAlias": "Atomberg Fan",
   "pluginType": "platform",
   "singular": true,
   "schema": {
