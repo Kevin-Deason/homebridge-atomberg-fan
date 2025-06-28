@@ -1,22 +1,22 @@
 {
   "private": false,
-  "displayName": "Homebridge Atomberg Fan",
-  "name": "homebridge-atomberg-fan",
+  "displayName": "Homebridge Atomberg Smart Fans",
+  "name": "homebridge-atomberg-smart-fans",
   "version": "1.0.0",
   "description": "Homebridge platform plugin providing HomeKit support for Atomberg Smart Fans.",
   "license": "Apache-2.0",
-  "author": "Sangwan5688",
+  "author": "Kevin-Deason",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sangwan5688/homebridge-atomberg-fan.git"
+    "url": "git+https://github.com/Kevin-Deason/homebridge-atomberg-fan.git"
   },
   "bugs": {
-    "url": "https://github.com/Sangwan5688/homebridge-atomberg-fan/issues"
+    "url": "https://github.com/Kevin-Deason/homebridge-atomberg-fan/issues"
   },
-  "homepage": "https://github.com/Sangwan5688/homebridge-atomberg-fan#readme",
+  "homepage": "https://github.com/Kevin-Deason/homebridge-atomberg-fan#readme",
   "funding": {
     "type": "github",
-    "url": "https://github.com/sponsors/Sangwan5688"
+    "url": "https://github.com/sponsors/Kevin-Deason"
   },
   "engines": {
     "node": ">=14.0.0",
@@ -35,7 +35,7 @@
   "keywords": [
     "homebridge",
     "homebridge-plugin",
-    "homebridge-atomberg-fan",
+    "homebridge-atomberg-smart-fans",
     "homekit",
     "atomberg",
     "renesa",
