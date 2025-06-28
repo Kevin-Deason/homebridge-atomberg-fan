@@ -155,26 +155,27 @@ export class AtombergFanPlatformAccessory {
    * Handle "SET" requests from HomeKit
    * These are sent when the user changes the spped of the fan
    */
-  async setRotationSpeed(value: CharacteristicValue) {
-    this.platform.log.debug('Fan Speed CharacteristicValue -> ', value);
-    const newSpeed = (value as number) => {
-      if (value === 0) return 0;
-      if (value <= 16.66) return 1;
-      if (value <= 33.33) return 2;
-      if (value <= 50) return 3;
-      if (value <= 66.66) return 4;
-      if (value <= 83.33) return 5;
-      return 6;
-    };
-    this.fanState.last_recorded_speed = newSpeed;
+   async setRotationSpeed(value: CharacteristicValue) {
+   this.platform.log.debug('Fan Speed CharacteristicValue -> ', value);
+   const newSpeed = (val: number): number => {
+     if (val === 0) return 0;
+     if (val <= 16.66) return 1;
+     if (val <= 33.33) return 2;
+     if (val <= 50) return 3;
+     if (val <= 66.66) return 4;
+     if (val <= 83.33) return 5;
+     return 6;
+   };
+   const speedValue = newSpeed(value as number);
+   this.fanState.last_recorded_speed = speedValue;
 
-    this.platform.log.debug('Set Characteristic Speed -> ', newSpeed);
-    const cmdData = {
-      'device_id': this.accessory.context.device.device_id,
-      'command': {'speed': newSpeed},
-    } as AtombergFanCommandData;
-    this.sendDeviceUpdate(cmdData);
-  }
+   this.platform.log.debug('Set Characteristic Speed -> ', speedValue);
+   const cmdData = {
+     'device_id': this.accessory.context.device.device_id,
+     'command': { 'speed': speedValue },
+   } as AtombergFanCommandData;
+   this.sendDeviceUpdate(cmdData);
+ }
 
   /**
    * Handle "SET" requests from HomeKit
