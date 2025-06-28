@@ -8,12 +8,12 @@
   "author": "Kevin-Deason",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kevin-Deason/homebridge-atomberg-fan.git"
+    "url": "git+https://github.com/Kevin-Deason/homebridge-atomberg-smart-fans.git"
   },
   "bugs": {
-    "url": "https://github.com/Kevin-Deason/homebridge-atomberg-fan/issues"
+    "url": "https://github.com/Kevin-Deason/homebridge-atomberg-smart-fans/issues"
   },
-  "homepage": "https://github.com/Kevin-Deason/homebridge-atomberg-fan#readme",
+  "homepage": "https://github.com/Kevin-Deason/homebridge-atomberg-smart-fans#readme",
   "funding": {
     "type": "github",
     "url": "https://github.com/sponsors/Kevin-Deason"
