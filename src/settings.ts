@@ -1,6 +1,6 @@
-export const PLATFORM_NAME = 'Atomberg Fan';
+export const PLATFORM_NAME = 'Atomberg Smart Fans';
 
-export const PLUGIN_NAME = 'homebridge-atomberg-fan';
+export const PLUGIN_NAME = 'homebridge-atomberg-smart-fans';
 
 export const LOGIN_RETRY_DELAY = 360 * 1000;
 
